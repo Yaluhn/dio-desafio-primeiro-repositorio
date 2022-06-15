@@ -1,0 +1,59 @@
+abrir com o botão direito no diretório onde o arquivo está
+
+
+dentro do git bash
+
+
+digitar 
+$ openssl sha1 <nome do arquivo>
+
+
+
+Commit <tamanho> - 				(carrega trees/parente/autor/mensagem/timestamp)
+Tree <tamanho> \0 - 				(carrega blobs/trees)
+blob <tamanho> \0 - 				(arquivo para criptogração do git)
+
+
+
+
+mkdir (criar uma nova pasta)
+mv **arquivo** ./**pasta destino/**     mover para
+
+
+
+###Comandos para iniciar uma chave pública do Git###
+
+$ ssh-keygen -t ed25519 -C "e-mail"
+
+$ cd /c/Users/iuri_/.ssh/
+
+$ cat id_ed25519.pub       //** colocar no repositório (github...)
+
+$ eval $(ssh-agent -s)
+
+$ ssh-add id_ed25519
+
+$ git clone (inserir ssh do projeto)
+
+
+
+
+
+### Comandos de commit ###
+
+git config --global user.name " " 
+git config --global user.email " "
+
+git init 					//** inicializa e cria a pasta .git
+
+git add * 					//**(move os arquivos da pasta para area de
+						staged)
+
+git commit -m "**algum comentário**" 	//** commita os arquivos num repositório local
+
+git status 					//** saber como os arquivos locais estão
+
+git remote add origin			//** adicionar o link do repositório ondes as 
+https://<link do repositório>		alterações serão feitas
+
+git push origin master			//** empurrar os arquivos para o github
